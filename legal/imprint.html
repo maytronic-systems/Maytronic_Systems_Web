@@ -1,273 +1,164 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
   <base href="/Maytronic_Systems_Web/">
-  <title>Imprint – IRIS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <style>
-    :root {
-      --bg0: #070B12;
-      --bg1: #0B1220;
-      --card: rgba(255,255,255,0.06);
-      --border: rgba(255,255,255,0.10);
-      --text: rgba(255,255,255,0.92);
-      --muted: rgba(255,255,255,0.68);
-      --soft: rgba(255,255,255,0.55);
+  <title>Imprint — Maytronic Systems / IRIS</title>
+  <meta name="description" content="Imprint (legal notice) for Maytronic Systems and IRIS." />
+  <meta name="theme-color" content="#081018" />
 
-      --a1: #3B82F6;
-      --a2: #22D3EE;
-
-      --shadow: 0 20px 60px rgba(0,0,0,0.55);
-      --radius: 18px;
-      --radius2: 14px;
-
-      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-    }
-
-    * { box-sizing: border-box; }
-    html, body { height: 100%; }
-
-    body {
-      margin: 0;
-      font-family: var(--sans);
-      color: var(--text);
-      background:
-        radial-gradient(1200px 700px at 15% -10%, rgba(59,130,246,0.22), transparent 60%),
-        radial-gradient(900px 600px at 85% 0%, rgba(34,211,238,0.18), transparent 55%),
-        linear-gradient(180deg, var(--bg0), var(--bg1));
-    }
-
-    a {
-      color: rgba(34,211,238,0.95);
-      text-decoration: none;
-    }
-    a:hover { text-decoration: underline; }
-
-    .wrap {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 36px 18px 60px;
-    }
-
-    .topbar {
-      display: flex;
-      gap: 14px;
-      align-items: center;
-      justify-content: space-between;
-      padding: 16px 18px;
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,0.04);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(10px);
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .logo {
-      width: 40px;
-      height: 40px;
-      border-radius: 12px;
-      background:
-        radial-gradient(circle at 30% 30%, rgba(34,211,238,0.95), rgba(59,130,246,0.95) 45%, rgba(16,185,129,0.65) 90%);
-      box-shadow: 0 12px 30px rgba(34,211,238,0.18);
-      border: 1px solid rgba(255,255,255,0.16);
-    }
-
-    .brand h1 {
-      margin: 0;
-      font-size: 16px;
-      font-weight: 700;
-      letter-spacing: 0.4px;
-    }
-    .brand .sub {
-      margin: 2px 0 0;
-      color: var(--muted);
-      font-size: 12.5px;
-    }
-
-    .pill {
-      padding: 8px 12px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,0.05);
-      color: var(--muted);
-      font-size: 12.5px;
-      white-space: nowrap;
-    }
-
-    .card {
-      margin-top: 16px;
-      padding: 18px;
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-      background: linear-gradient(180deg, rgba(255,255,255,0.055), rgba(255,255,255,0.035));
-      box-shadow: 0 16px 50px rgba(0,0,0,0.35);
-    }
-
-    .section {
-      padding: 16px;
-      border-radius: var(--radius2);
-      border: 1px solid rgba(255,255,255,0.10);
-      background: rgba(0,0,0,0.25);
-      margin-bottom: 14px;
-    }
-
-    .section h2 {
-      margin: 0 0 10px;
-      font-size: 16px;
-      letter-spacing: 0.2px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .badge {
-      font-family: var(--mono);
-      font-size: 12px;
-      padding: 3px 8px;
-      border-radius: 999px;
-      border: 1px solid rgba(34,211,238,0.24);
-      color: rgba(34,211,238,0.95);
-      background: rgba(34,211,238,0.08);
-    }
-
-    .section p {
-      margin: 0 0 10px;
-      color: var(--muted);
-      font-size: 14px;
-      line-height: 1.75;
-    }
-
-    .kv {
-      display: grid;
-      grid-template-columns: 180px 1fr;
-      gap: 10px 14px;
-      margin-top: 10px;
-      padding: 12px;
-      border-radius: 14px;
-      border: 1px solid rgba(255,255,255,0.10);
-      background: rgba(0,0,0,0.35);
-    }
-
-    .kv div { color: var(--muted); font-size: 13.5px; }
-    .kv b { color: rgba(255,255,255,0.88); }
-
-    .footer {
-      margin-top: 18px;
-      color: var(--soft);
-      font-size: 12.5px;
-      display: flex;
-      justify-content: space-between;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    @media (max-width: 860px) {
-      .kv { grid-template-columns: 1fr; }
-    }
-  </style>
+  <link rel="icon" href="/assets/img/iris-logo.svg" type="image/svg+xml" />
+  <link rel="manifest" href="/site.manifest" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
+
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-<div class="wrap">
-  <div class="topbar">
-    <div class="brand">
-      <div class="logo"></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/Maytronic_Systems_Web/">
+        <img src="/assets/img/maytronic-logo.svg" class="brand-mark" alt="Maytronic Systems logo" />
+        <span class="brand-text">
+          <strong>Maytronic Systems</strong>
+          <span class="muted">Imprint</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="/iris/">IRIS</a>
+        <a href="/support/">Support</a>
+        <a href="/press/">Press</a>
+        <a href="/legal/privacy.html">Privacy</a>
+        <a class="btn btn-small" href="/iris/#get">Get IRIS</a>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" data-mobile-nav hidden>
+      <a href="/iris/">IRIS</a>
+      <a href="/support/">Support</a>
+      <a href="/press/">Press</a>
+      <a href="/legal/privacy.html">Privacy</a>
+      <a href="/legal/imprint.html" aria-current="page">Imprint</a>
+      <a class="btn" href="/iris/#get">Get IRIS</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <h1>Imprint</h1>
+        <p class="muted maxw">
+          Legal notice for Maytronic Systems and IRIS. This page contains information required under German law (e.g., §5 TMG / applicable provisions).
+        </p>
+
+        <div class="card">
+          <h2>Service Provider</h2>
+
+          <div class="kv">
+            <div class="k">Name</div>
+            <div class="v">Maytronic Systems</div>
+
+            <div class="k">Owner</div>
+            <div class="v">Lukas May</div>
+
+            <div class="k">Address</div>
+            <div class="v">
+              Simpelvelder Straße 10<br />
+              63505 Langenselbold<br />
+              Germany
+            </div>
+
+            <div class="k">Email</div>
+            <div class="v"><a href="mailto:may@maytronic-systems.com">may@maytronic-systems.com</a></div>
+          </div>
+
+          <div class="divider"></div>
+
+          <h2>Responsible for Content</h2>
+          <p class="muted">
+            Lukas May (responsible for content according to § 55 para. 2 German Interstate Broadcasting Treaty — RStV)
+          </p>
+
+          <div class="divider"></div>
+
+          <h2>Business Information</h2>
+          <p class="muted">
+            Sole proprietorship under German law.<br />
+            Place of business: Germany
+          </p>
+
+          <div class="divider"></div>
+
+          <h2>Liability for Content</h2>
+          <p class="muted">
+            The contents of these pages were created with great care. However, we cannot guarantee the accuracy, completeness,
+            or timeliness of the content.
+          </p>
+          <p class="muted">
+            As a service provider, we are responsible for our own content on these pages in accordance with § 7 para. 1 TMG under general laws.
+          </p>
+
+          <div class="divider"></div>
+
+          <h2>Liability for External Links</h2>
+          <p class="muted">
+            Our pages may contain links to external websites of third parties. We have no influence on the contents of those websites
+            and therefore cannot assume any liability.
+          </p>
+          <p class="muted">
+            The respective provider or operator of the linked pages is always responsible for their content.
+          </p>
+
+          <div class="divider"></div>
+
+          <h2>Copyright</h2>
+          <p class="muted">
+            The content and works created by the site operator on these pages are subject to German copyright law.
+          </p>
+          <p class="muted">
+            Duplication, processing, distribution, or any form of commercialization beyond the scope of copyright law requires prior written consent.
+          </p>
+
+          <div class="divider"></div>
+
+          <p class="small muted">
+            Related: <a href="/legal/privacy.html">Privacy Policy</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
       <div>
-        <h1>IRIS – Imprint</h1>
-        <div class="sub">Insight & Recon Interface System</div>
+        <div class="footer-brand">
+          <img src="/assets/img/maytronic-logo.svg" alt="" class="footer-mark" />
+          <div>
+            <strong>Maytronic Systems</strong><br />
+            <span class="muted">Imprint</span>
+          </div>
+        </div>
+        <p class="muted small">© <span data-year></span> Maytronic Systems.</p>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <div class="footer-title">Legal</div>
+          <a href="/legal/privacy.html">Privacy</a>
+          <a href="/legal/imprint.html" aria-current="page">Imprint</a>
+        </div>
       </div>
     </div>
-    <div class="pill">Legal Information</div>
-  </div>
+  </footer>
 
-  <div class="card">
-    <div class="section">
-      <h2><span class="badge">§5 TMG</span> Service Provider</h2>
-     <div class="kv">
-  <div><b>Name</b></div><div>Maytronic Systems</div>
-  <div><b>Owner</b></div><div>Lukas May</div>
-  <div><b>Address</b></div>
-  <div>
-    Simpelvelder Straße 10<br>
-    63505 Langenselbold<br>
-    Germany
-  </div>
-  <div><b>Email</b></div><div>may@maytronic-systems.com</div>
-</div>
-
-    </div>
-
-    <div class="section">
-      <h2><span class="badge">§55 RStV</span> Responsible for Content</h2>
-      <p>
-        Lukas May<br>
-        (responsible for content according to § 55 para. 2 German Interstate Broadcasting Treaty)
-      </p>
-    </div>
-
-    <div class="section">
-      <h2><span class="badge">Info</span> Business Information</h2>
-      <p>
-        Sole proprietorship under German law.<br>
-        Place of business: Germany
-      </p>
-    </div>
-
-    <div class="section">
-      <h2><span class="badge">Disclaimer</span> Liability for Content</h2>
-      <p>
-        The contents of these pages were created with great care. However, we cannot guarantee the accuracy,
-        completeness, or timeliness of the content.
-      </p>
-      <p>
-        As a service provider, we are responsible for our own content on these pages in accordance with
-        § 7 para. 1 TMG under general laws.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2><span class="badge">Links</span> Liability for External Links</h2>
-      <p>
-        Our pages may contain links to external websites of third parties. We have no influence on the
-        contents of those websites and therefore cannot assume any liability.
-      </p>
-      <p>
-        The respective provider or operator of the linked pages is always responsible for their content.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2><span class="badge">©</span> Copyright</h2>
-      <p>
-        The content and works created by the site operator on these pages are subject to German copyright law.
-      </p>
-      <p>
-        Duplication, processing, distribution, or any form of commercialization beyond the scope of copyright law
-        requires prior written consent.
-      </p>
-    </div>
-
-    <div class="footer">
-      <div>© <span id="y"></span> Maytronic Systems • IRIS</div>
-      <div>
-        <a href="privacy.html">Privacy Policy</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-  document.getElementById("y").textContent = new Date().getFullYear();
-</script>
-
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>
