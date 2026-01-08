@@ -1,57 +1,9 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <base href="/Maytronic_Systems_Web/">
-
-  <title>Press — IRIS / Maytronic Systems</title>
-  <meta name="description" content="Press kit for IRIS and Maytronic Systems: logos, screenshots, product description, and contact." />
-  <meta name="theme-color" content="#081018" />
-
-  <link rel="icon" href="../assets/img/iris-logo.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="../assets/css/styles.css" />
-</head>
-<body>
-  <a class="skip" href="#main">Skip to content</a>
-
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="/Maytronic_Systems_Web/">
-        <img src="/assets/img/maytronic-logo.svg" class="brand-mark" alt="Maytronic Systems logo" />
-        <span class="brand-text">
-          <strong>Maytronic Systems</strong>
-          <span class="muted">Press</span>
-        </span>
-      </a>
-
- <nav class="nav" aria-label="Primary navigation">
-        <a href="iris/">Overview</a>
-        <a href="support/">Support</a>
-        <a href="press/">Press</a>
-        <a href="legal/privacy.html">Privacy</a>
-        <a href="legal/imprint.html">Imprint</a>
-        <a class="btn btn-small" href="#get">Get IRIS</a>
-      </nav>
-
-      <button class="nav-toggle" type="button" aria-label="Open menu" data-nav-toggle>
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-
-    <div class="mobile-nav" data-mobile-nav hidden>
-      <a href="iris/">Overview</a>
-      <a href="support/">Support</a>
-      <a href="press/">Press</a>
-      <a href="legal/privacy.html">Privacy</a>
-      <a href="legal/imprint.html">Imprint</a>
-      <a class="btn" href="#get">Get IRIS</a>
-    </div>
-  </header>
-
-
-  <main id="main">
-    <section class="section">
+---
+layout: default
+title: "Press — IRIS / Maytronic Systems"
+description: "Press kit for IRIS and Maytronic Systems: logos, screenshots, product description, and contact."
+---
+<section class="section">
       <div class="container">
         <h1>Press kit</h1>
         <p class="lead maxw">
@@ -59,8 +11,8 @@
         </p>
 
         <div class="cta-row">
-          <a class="btn" href="/assets/downloads/presskit.zip">Download press kit (ZIP)</a>
-          <a class="btn btn-ghost" href="mailto:PRESS@YOURDOMAIN.TLD">Press contact</a>
+          <a class="btn" href="{{ '/assets/downloads/presskit.zip' | relative_url }}">Download press kit (ZIP)</a>
+          <a class="btn btn-ghost" href="mailto:may@maytronic-systems.com">Press contact</a>
         </div>
       </div>
     </section>
@@ -84,18 +36,18 @@
           <div class="card">
             <h3>Maytronic Systems</h3>
             <div class="asset-row">
-              <img src="/assets/img/maytronic-logo.svg" class="asset-img" alt="Maytronic logo" />
+              <img src="{{ '/assets/img/maytronic-logo.svg' | relative_url }}" class="asset-img" alt="Maytronic logo" />
               <div>
-                <a class="btn btn-small btn-ghost" href="/assets/img/maytronic-logo.svg">Download SVG</a>
+                <a class="btn btn-small btn-ghost" href="{{ '/assets/img/maytronic-logo.svg' | relative_url }}">Download SVG</a>
               </div>
             </div>
           </div>
           <div class="card">
             <h3>IRIS</h3>
             <div class="asset-row">
-              <img src="/assets/img/iris-logo.svg" class="asset-img" alt="IRIS logo" />
+              <img src="{{ '/assets/img/iris-logo.svg' | relative_url }}" class="asset-img" alt="IRIS logo" />
               <div>
-                <a class="btn btn-small btn-ghost" href="/assets/img/iris-logo.svg">Download SVG</a>
+                <a class="btn btn-small btn-ghost" href="{{ '/assets/img/iris-logo.svg' | relative_url }}">Download SVG</a>
               </div>
             </div>
           </div>
@@ -104,40 +56,17 @@
         <h2 class="mt">Screenshots</h2>
         <div class="shots">
           <figure class="shot">
-            <img src="/assets/img/screenshots/placeholder-1.png" alt="IRIS screenshot placeholder 1" loading="lazy" />
+            <img src="{{ '/assets/img/screenshots/placeholder-1.png' | relative_url }}" alt="IRIS screenshot placeholder 1" loading="lazy" />
             <figcaption class="muted small">Replace with real screenshots</figcaption>
           </figure>
           <figure class="shot">
-            <img src="/assets/img/screenshots/placeholder-2.png" alt="IRIS screenshot placeholder 2" loading="lazy" />
+            <img src="{{ '/assets/img/screenshots/placeholder-2.png' | relative_url }}" alt="IRIS screenshot placeholder 2" loading="lazy" />
             <figcaption class="muted small">Replace with real screenshots</figcaption>
           </figure>
           <figure class="shot">
-            <img src="/assets/img/screenshots/placeholder-3.png" alt="IRIS screenshot placeholder 3" loading="lazy" />
+            <img src="{{ '/assets/img/screenshots/placeholder-3.png' | relative_url }}" alt="IRIS screenshot placeholder 3" loading="lazy" />
             <figcaption class="muted small">Replace with real screenshots</figcaption>
           </figure>
         </div>
       </div>
     </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <strong>Maytronic Systems</strong><br />
-        <span class="muted">Press</span>
-        <p class="muted small">© <span data-year></span></p>
-      </div>
-      <div class="footer-links">
-        <div>
-          <div class="footer-title">Legal</div>
-          <a href="/legal/privacy.html">Privacy</a>
-          <a href="/legal/imprint.html">Imprint</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="/assets/js/main.js"></script>
-</body>
-</html>
-
