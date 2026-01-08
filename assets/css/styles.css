@@ -128,7 +128,15 @@ img{ max-width:100%; display:block; }
 .mobile-nav{
   border-top: 1px solid var(--line);
   padding: 12px var(--pad);
-  display:flex;
+  /* Mobile navigation is hidden by default */
+.mobile-nav {
+  display: none;
+}
+
+/* Only show mobile nav when JS removes [hidden] */
+.mobile-nav:not([hidden]) {
+  display: flex;
+}
   flex-direction:column;
   gap: 10px;
 }
