@@ -1,62 +1,9 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Maytronic Systems — IRIS (Insight & Recon Interface System)</title>
-  <meta name="description" content="Maytronic Systems builds privacy-first analytics tools. IRIS helps you visualize app activity, permissions, and network usage on Android." />
-  <meta name="theme-color" content="#081018" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Maytronic Systems — IRIS" />
-  <meta property="og:description" content="IRIS helps you visualize app activity, permissions, and network usage on Android." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO/" />
-  <meta property="og:image" content="https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO/assets/img/hero-iris.svg" />
-
-  <link rel="icon" href="assets/img/iris-logo.svg" type="image/svg+xml" />
-  <link rel="manifest" href="site.webmanifest" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
-</head>
-<body>
-  <a class="skip" href="#main">Skip to content</a>
-
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="/">
-        <img src="assets/img/maytronic-logo.svg" class="brand-mark" alt="Maytronic Systems logo" />
-        <span class="brand-text">
-          <strong>Maytronic Systems</strong>
-          <span class="muted">Privacy-first analytics</span>
-        </span>
-      </a>
-
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="iris/">IRIS</a>
-        <a href="support/">Support</a>
-        <a href="press/">Press</a>
-        <a href="legal/privacy.html">Privacy</a>
-        <a href="legal/imprint.html">Imprint</a>
-        <a class="btn btn-small" href="/iris/#get">Get IRIS</a>
-      </nav>
-
-      <button class="nav-toggle" type="button" aria-label="Open menu" data-nav-toggle>
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-
-    <div class="mobile-nav" data-mobile-nav hidden>
-      <a href="iris/">IRIS</a>
-      <a href="support/">Support</a>
-      <a href="press/">Press</a>
-      <a href="legal/privacy.html">Privacy</a>
-      <a href="legal/imprint.html">Imprint</a>
-      <a class="btn" href="/iris/#get">Get IRIS</a>
-    </div>
-  </header>
-
-  <main id="main">
-    <section class="hero">
+---
+layout: default
+title: "Maytronic Systems — IRIS (Insight & Recon Interface System)"
+description: "Maytronic Systems builds privacy-first analytics tools. IRIS helps you visualize app activity, permissions, and network usage on Android."
+---
+<section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="badge">IRIS — Insight & Recon Interface System</p>
@@ -67,8 +14,8 @@
           </p>
 
           <div class="cta-row">
-            <a class="btn" href="/iris/#get">Get IRIS</a>
-            <a class="btn btn-ghost" href="/iris/">Learn more</a>
+            <a class="btn" href="{{ '/iris/#get' | relative_url }}">Get IRIS</a>
+            <a class="btn btn-ghost" href="{{ '/iris/' | relative_url }}">Learn more</a>
           </div>
 
           <ul class="hero-points">
@@ -134,15 +81,15 @@
           <p class="lead">
             A modern, privacy-oriented Android dashboard that visualizes how apps use permissions and data — so you stay informed.
           </p>
-          <a class="btn" href="/iris/">Explore IRIS features</a>
+          <a class="btn" href="{{ '/iris/' | relative_url }}">Explore IRIS features</a>
         </div>
         <div class="card">
           <h3>Quick links</h3>
           <ul class="list">
-            <li><a href="/support/">Support & FAQ</a></li>
-            <li><a href="/press/">Press kit</a></li>
-            <li><a href="/legal/privacy.html">Privacy policy</a></li>
-            <li><a href="/legal/imprint.html">Imprint</a></li>
+            <li><a href="{{ '/support/' | relative_url }}">Support & FAQ</a></li>
+            <li><a href="{{ '/press/' | relative_url }}">Press kit</a></li>
+            <li><a href="{{ '/legal/privacy/' | relative_url }}">Privacy policy</a></li>
+            <li><a href="{{ '/legal/imprint/' | relative_url }}">Imprint</a></li>
           </ul>
         </div>
       </div>
@@ -161,43 +108,3 @@
         </div>
       </div>
     </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <div class="footer-brand">
-          <img src="assets/img/maytronic-logo.svg" alt="" class="footer-mark" />
-          <div>
-            <strong>Maytronic Systems</strong><br />
-            <span class="muted">Independent software studio</span>
-          </div>
-        </div>
-        <p class="muted small">
-          © <span data-year></span> Maytronic Systems. All rights reserved.
-        </p>
-      </div>
-
-      <div class="footer-links">
-        <div>
-          <div class="footer-title">Product</div>
-          <a href="/iris/">IRIS</a>
-          <a href="/iris/#get">Get IRIS</a>
-        </div>
-        <div>
-          <div class="footer-title">Company</div>
-          <a href="/press/">Press</a>
-          <a href="/support/">Support</a>
-        </div>
-        <div>
-          <div class="footer-title">Legal</div>
-          <a href="/legal/privacy.html">Privacy</a>
-          <a href="/legal/imprint.html">Imprint</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="assets/js/main.js"></script>
-</body>
-</html>
