@@ -1,56 +1,9 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <base href="/Maytronic_Systems_Web/">
-  <title>Support — IRIS</title>
-  <meta name="description" content="Support and FAQ for IRIS (Android). Troubleshooting, permissions, usage access, network stats, and contact." />
-  <meta name="theme-color" content="#081018" />
-
-  <link rel="icon" href="../assets/img/iris-logo.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="../assets/css/styles.css" />
-</head>
-<body>
-  <a class="skip" href="#main">Skip to content</a>
-
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="/Maytronic_Systems_Web/">
-        <img src="/assets/img/maytronic-logo.svg" class="brand-mark" alt="Maytronic Systems logo" />
-        <span class="brand-text">
-          <strong>Maytronic Systems</strong>
-          <span class="muted">Support</span>
-        </span>
-      </a>
-
- <nav class="nav" aria-label="Primary navigation">
-        <a href="iris/">Overview</a>
-        <a href="support/">Support</a>
-        <a href="press/">Press</a>
-        <a href="legal/privacy.html">Privacy</a>
-        <a href="legal/imprint.html">Imprint</a>
-        <a class="btn btn-small" href="#get">Get IRIS</a>
-      </nav>
-
-      <button class="nav-toggle" type="button" aria-label="Open menu" data-nav-toggle>
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-
-    <div class="mobile-nav" data-mobile-nav hidden>
-      <a href="iris/">Overview</a>
-      <a href="support/">Support</a>
-      <a href="press/">Press</a>
-      <a href="legal/privacy.html">Privacy</a>
-      <a href="legal/imprint.html">Imprint</a>
-      <a class="btn" href="#get">Get IRIS</a>
-    </div>
-  </header>
-
-
-  <main id="main">
-    <section class="section">
+---
+layout: default
+title: "Support — IRIS"
+description: "Support and FAQ for IRIS (Android). Troubleshooting, permissions, usage access, network stats, and contact."
+---
+<section class="section">
       <div class="container">
         <h1>Support</h1>
         <p class="lead maxw">
@@ -59,7 +12,11 @@
         </p>
 
         <div class="callout">
-          <strong>Contact:</strong> <a href="mailto:SUPPORT@YOURDOMAIN.TLD">SUPPORT@YOURDOMAIN.TLD</a>
+          <strong>Contact:</strong> 
+          <a href="mailto:may@maytronic-systems.com?subject=IRIS%20Support%20Request&body=Device%20model:%0AAndroid%20version:%0AIRIS%20version:%0A%0ADescription:%0A">
+          may@maytronic-systems.com
+        </a>
+
           <span class="muted">— include device model, Android version, and IRIS app version.</span>
         </div>
       </div>
@@ -143,35 +100,8 @@
           For details on data handling and contact information, see our legal pages.
         </p>
         <div class="cta-row">
-          <a class="btn btn-ghost" href="/legal/privacy.html">Privacy policy</a>
-          <a class="btn btn-ghost" href="/legal/imprint.html">Imprint</a>
+          <a class="btn btn-ghost" href="{{ '/legal/privacy/' | relative_url }}">Privacy policy</a>
+          <a class="btn btn-ghost" href="{{ '/legal/imprint/' | relative_url }}">Imprint</a>
         </div>
       </div>
     </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <strong>Maytronic Systems</strong><br />
-        <span class="muted">IRIS Support</span>
-        <p class="muted small">© <span data-year></span></p>
-      </div>
-      <div class="footer-links">
-        <div>
-          <div class="footer-title">Links</div>
-          <a href="/iris/">IRIS</a>
-          <a href="/press/">Press</a>
-        </div>
-        <div>
-          <div class="footer-title">Legal</div>
-          <a href="/legal/privacy.html">Privacy</a>
-          <a href="/legal/imprint.html">Imprint</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="/assets/js/main.js"></script>
-</body>
-</html>
